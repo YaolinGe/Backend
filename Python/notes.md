@@ -12,3 +12,8 @@
 - `set_a.symmetric_difference(set_b)` to get the symmetric difference elements that exist in set_a and set_b but not in both
 - `set_a ^ set_b` to get the same symmetric difference results.
 - `print(f"{selection}. {menu[selection]['name'] : <9} | {menu[selection]['price'] : >5}")` to print a formatted string with left and right alignment
+
+## Functional programming 
+- `map()` function applies a given function to all items in an input list
+- `filter()` function creates a list of elements for which a function returns true
+- `comprehensions` are a concise way to create lists, dictionaries, and sets
