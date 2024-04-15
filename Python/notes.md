@@ -17,3 +17,8 @@
 - `map()` function applies a given function to all items in an input list
 - `filter()` function creates a list of elements for which a function returns true
 - `comprehensions` are a concise way to create lists, dictionaries, and sets
+
+## Modules
+- `LEGB` rule: Local, Enclosing, Global, Built-in.
+- `reload` function to reload a module, it is an interesting concept to be able to dynamically reload new changes in a module.
+- `python -m pytest test_module.py::test_function` to run a specific test function in a test module.
