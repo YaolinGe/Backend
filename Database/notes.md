@@ -1,0 +1,132 @@
+# Database technology 
+`CRUD` operations: Create, Read, Update, Delete
+
+## Databases and data 
+- `object oriented databases` store data as objects, which can be manipulated through object-oriented programming languages.
+- `relational databases` store data in tables, which can be manipulated using SQL.
+- `graph databases` store data in nodes and edges, which can be manipulated using graph query languages.
+- `document databases` store data in documents, which can be manipulated using document query languages.
+- `cloud hosting` is a way to store data on the internet, rather than on a local server.
+- `NoSQL databases`: use a non-relational data model, which can be more flexible than a relational data model.
+    - `key-value stores` store data as key-value pairs.
+    - `column-family stores` store data in columns, rather than rows.
+    - `document stores` store data in documents.
+    - `graph stores` store data in nodes and edges.
+
+## SQL 
+- `DDL` (Data Definition Language) is used to define the structure of a database.
+    - `DDL Alter` is used to modify the structure of a database.
+    - `DDL Create` is used to create a new database.
+    - `DDL Drop` is used to delete a database.
+- `DML` (Data Manipulation Language) is used to manipulate data in a database.
+    - `DML Insert` is used to insert new data into a database.
+    - `DML Update` is used to update existing data in a database.
+    - `DML Delete` is used to delete data from a database.
+- `DQL` (Data Query Language) is used to query data in a database.
+    - `DQL Select` is used to retrieve data from a database.
+- `DCL` (Data Control Language) is used to control access to data in a database.
+    - `DCL Grant` is used to grant access to data in a database.
+    - `DCL Revoke` is used to revoke access to data in a database.
+- `TCL` (Transaction Control Language) is used to manage transactions in a database.
+    - `TCL Commit` is used to save changes to a database.
+    - `TCL Rollback` is used to undo changes to a database.
+- Examples 
+    - `CREATE TABLE table_name (column_name1 datatype(size), column_name2 datatype(size), column_name3 datatype(size));`
+    - `DROP TABLE table_name;`
+    - `ALTER TABLE table_name ADD (column_name datatype(size));`
+    - `ALTER TABLE table_name ADD primary key (column_name);`
+    - `TRUNCATE TABLE table_name;`
+    - `SELECT * FROM table_name;`
+    - `SELECT * FROM table_name;`
+    - `INSERT INTO table_name (column1, column2, column3) VALUES (value1, value2, value3);`
+    - `UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;`
+    - `DELETE FROM table_name WHERE condition;`
+- `CLOB` (Character Large Object) is used to store large amounts of text data.
+- `BLOB` (Binary Large Object) is used to store large amounts of binary data such as images. 
+- `Binary data` is data that is stored in binary format, which is a series of 0s and 1s. 
+- `key constraints` are used to enforce rules on the data in a database.
+    - `Primary key` is a unique identifier for a row in a table.
+    - `Foreign key` is a column that references a primary key in another table.
+    - `Unique key` is a column that must contain unique values.
+    - `Check key` is a column that must satisfy a condition.
+- `domain constraints` are used to enforce rules on the data in a database.
+    - `Not null` is a column that must contain a value.
+    - `Unique` is a column that must contain unique values.
+    - `Check` is a column that must satisfy a condition.
+- `referential integrity` is a property of a database that ensures that relationships between tables are maintained.
+
+## SQL Data types
+- `create database database_name;` is used to create a new database.
+- `use database_name;` is used to select a database.
+- `drop database database_name;` is used to delete a database.
+- `show databases;` is used to display a list of databases.
+- `show tables;` is used to display a list of tables in a database.
+- `create table table_name (column_name1 datatype(size), column_name2 datatype(size), column_name3 datatype(size));` is used to create a new table.
+- `alter table table_name add (column_name datatype(size));` is used to add a new column to a table.
+- `alter table table_name drop column column_name;` is used to delete a column from a table.
+- `alter table table_name modify column_name datatype(size);` is used to change the data type of a column.
+- `insert into table_name (column1, column2, column3) values (value1, value2, value3);` is used to insert new data into a table.
+- `insert into table_name (column1, column2, column3) values (value1, value2, value3), (value4, value5, value6);` is used to insert multiple rows of data into a table.
+- `insert into table_name select * from table_name2;` is used to copy data from one table to another.
+- `update table_name set column1 = value1, column2 = value2 where condition;` is used to update existing data in a table.
+- `delete from table_name where condition;` is used to delete data from a table.
+- `delete from table_name` to remove the entire table. 
+- `numeric` data types are used to store numbers.
+    - `INT` is used to store whole numbers.
+    - `FLOAT` is used to store floating-point numbers.
+    - `DECIMAL` is used to store fixed-point numbers.
+- `string` data types are used to store text data.
+    - `CHAR` is used to store fixed-length strings.
+    - `VARCHAR` is used to store variable-length strings.
+    - `TEXT` is used to store large amounts of text data.
+
+## SQL operators
+- `arithmetic operators`
+    - `select 5 + 3;` is used to add two numbers.
+    - `select 5 - 3;` is used to subtract two numbers.
+    - `select 5 * 3;` is used to multiply two numbers.
+    - `select 5 / 3;` is used to divide two numbers.
+    - `select 5 % 3;` is used to find the remainder of dividing two numbers.
+    - `select 5 ^ 3;` is used to raise a number to a power.
+    - `select * from table_name where column_name1 + column_name2 = value;` is used to add two columns and compare the result to a value.
+    - `select * from table_name where column_name1 - column_name2 = value;` is used to subtract two columns and compare the result to a value.
+    - `select * from table_name where column_name1 * column_name2 = value;` is used to multiply two columns and compare the result to a value.
+    - `select * from table_name where column_name1 / column_name2 = value;` is used to divide two columns and compare the result to a value.
+    - `select * from table_name where column_name1 % column_name2 = value;` is used to find the remainder of dividing two columns and compare the result to a value.
+    - `select * from table_name where column_name1 ^ column_name2 = value;` is used to raise a column to a power and compare the result to a value.
+- `comparison operators`
+    - `select * from table_name where column_name1 = value;` is used to compare a column to a value.
+    - `select * from table_name where column_name1 !=|<> value;` is used to compare a column to a value.
+    - `select * from table_name where column_name1 > value;` is used to compare a column to a value.
+    - `select * from table_name where column_name1 < value;` is used to compare a column to a value.
+    - `select * from table_name where column_name1 >= value;` is used to compare a column to a value.
+    - `select * from table_name where column_name1 <= value;` is used to compare a column to a value.
+- `sorting and filtering data` 
+    - `select * from table_name order by column1 asc, column2 desc;` is used to sort data in ascending order by one column and descending order by another column.
+    - `select * from table_name where column_name1 = value1 and column_name2 = value2;` is used to filter data based on multiple conditions.
+    - `between` is used to filter data based on a range of values.
+    - `in` is used to filter data based on a list of values.
+    - `like` is used to filter data based on a pattern.
+    - `select * from table_name where column_name1 between value1 and value2;` is used to filter data based on a range of values.
+    - `select * from table_name where column_name1 in (value1, value2, value3);` is used to filter data based on a list of values.
+    - `select * from table_name where column_name1 like 'pattern';` is used to filter data based on a pattern.
+    - `select * from table_name where column_name like 'pattern%';` is used to filter data based on a pattern that starts with a specific string.
+    - `select distinct column_name from table_name;` is used to remove duplicate values from a column.
+    - `select distinct column_name1, column_name2 from table_name;` is used to remove duplicate values from multiple columns.
+    - `select count(distinct column_name) from table_name;` is used to count the number of unique values in a column.
+
+## Schema
+- `foreign key (fk) references table_name(column_name);` is used to create a foreign key constraint.
+- `ERD` (Entity-Relationship Diagram) is a visual representation of the relationships between tables in a database.
+- `relational database`
+    - `one-to-many`
+    - `many-to-many`
+    - `one-to-one`
+- `alter table vehicle add foreign key (ownerID) references owner(ownerID); ` is used to create a foreign key constraint.
+- `alter table vehicle drop foreign key ownerID;` is used to delete a foreign key constraint.
+- `normalization` is the process of organizing data in a database to reduce redundancy and improve data integrity.
+    - `first normal form (1NF)` is a table that has a primary key and no repeating groups.
+    - `second normal form (2NF)` is a table that is in 1NF and has no partial dependencies.
+    - `third normal form (3NF)` is a table that is in 2NF and has no transitive dependencies.
+- `denormalization` is the process of adding redundancy to a database to improve performance.
+

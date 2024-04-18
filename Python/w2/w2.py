@@ -110,8 +110,5 @@
 # b = B(a)
 # print(a)
 
-b = B()
 
-class B: 
-    bravo = 5
-    
+
