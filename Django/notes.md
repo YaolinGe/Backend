@@ -17,3 +17,6 @@
 - `three-tier architecture`: presentation tier, application tier, data tier
 - `MVT`: Model, View, Template
 - `data-logic-display`: Model, View, Template
+- `urlconf`: URL configuration 
+- `class-based views`: Django views that are classes to handle `get` and `post` requests
+- `path('', views.index, name='index')`: will map to the / url, so no need to add / in the url, otherwise it will not work. 
